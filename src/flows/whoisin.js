@@ -9,7 +9,7 @@ module.exports = (app) => {
   let kv = app.kv
   let chronos = app.chronos
 
-  slapp.command('/inorout', /.*/, (msg) => {
+  slapp.command('/support', /.*/, (msg) => {
     var lines = msg.body.text.split(os.EOL).map((it) => { return it.trim() })
 
     let poll = null
